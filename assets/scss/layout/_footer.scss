@@ -1,0 +1,9 @@
+footer {
+  background-color: $primary;
+  padding: 20px 0;
+  margin-top: 40px;
+  p {
+    @include typography(1.125rem, 400, 120%);
+    color: $white;
+  }
+}

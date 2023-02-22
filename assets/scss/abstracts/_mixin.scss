@@ -1,0 +1,16 @@
+@mixin typography($font-size, $font-weight, $line-height) {
+    font-size: $font-size !important;
+    font-weight: $font-weight !important;
+    line-height: $line-height !important;
+  }
+
+@mixin media_wrapper($width, $height, $object) {
+  width: $width;
+  height: $height;
+  overflow: hidden !important;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: $object;
+  }
+}

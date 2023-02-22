@@ -1,0 +1,119 @@
+.home {
+  &-banner {
+    .media-wrapper {
+      @include media_wrapper(100%, 620px, cover);
+    }
+  }
+  &-services {
+    margin-top: 40px;
+    h2 {
+      @include typography(2rem, 500, 120%);
+      color: $primary-100;
+      margin-bottom: 20px;
+    }
+  }
+}
+.about {
+  &-banner {
+    background-color: $primary-100;
+    color: $white;
+    position: relative;
+    padding: 10px 0;
+    h1 {
+      @include typography(3.5rem, 500, 120%);
+      margin-bottom: 10px;
+    }
+    p {
+      @include typography(1.125rem, 400, 180%);
+      padding-right: 40px;
+    }
+    .media-wrapper {
+      @include media_wrapper(100%, 656px, cover);
+    }
+    @media (max-width: 940px) {
+      .overlay {
+        &-left,
+        &-right {
+          display: none;
+        }
+      }
+    }
+    .overlay {
+      &-left {
+        position: absolute;
+        top: 40px;
+        left: 0;
+      }
+      &-right {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+      }
+    }
+  }
+}
+
+.services {
+  margin-top: 20px;
+  .intro {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+      @include typography(2rem, 500, 120%);
+      color: $primary;
+    }
+    p {
+      @include typography(1.125rem, 400, 130%);
+      color: $grey-100;
+    }
+  }
+}
+
+.single {
+  margin-top: 30px;
+  min-height: 600px;
+  h1 {
+    @include typography(2.5rem, 500, 120%);
+    color: $primary-100;
+    margin-bottom: 20px;
+  }
+  p {
+    @include typography(1.125rem, 400, 150%);
+    color: $grey-100;
+    margin-bottom: 20px;
+  }
+  br {
+    height: 20px;
+  }
+  li {
+    margin: 5px 0;
+  }
+}
+
+.contact {
+  margin-top: 30px;
+  h3 {
+    @include typography(1.125rem, 500, 120%);
+  }
+  .media-wrapper {
+    overflow: hidden !important;
+    height: 472px;
+    position: relative;
+    img {
+      object-fit: cover;
+    }
+  }
+  &-info {
+    padding-left: 120px;
+    i {
+      font-size: 24px;
+    }
+  }
+
+  &-form {
+    padding: 0 50px 0 120px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,125 @@
+@import "./framework/font";
+@import "./abstracts/variables";
+@import "./framework/bootstrap";
+@import "./abstracts/mixin";
+@import "./abstracts/base";
+@import "./abstracts/typography";
+@import "./abstracts/utilities";
+@import "./layout/section";
+@import "./components/card";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/banner";
+@import "./layout/aside";
+
+.about-service h2 {
+  margin-bottom: 2rem;
+}
+.about-service p {
+  line-height: 180%;
+}
+
+.about-banner {
+  display: grid;
+  align-content: center;
+  padding: 7rem 0;
+}
+.about-banner .media-wrapper {
+  height: 450px;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.about-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.about-heading {
+  color: white;
+}
+.about-landing {
+  position: relative;
+  height: 400px;
+  display: grid;
+  place-items: center;
+}
+.about-landing-content {
+  z-index: 99;
+  padding: 1rem;
+  position: relative;
+}
+
+.about-landing .media-wrapper {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about-landing .media-wrapper img {
+  object-fit: cover;
+  width: 100%;
+
+  height: 400px;
+}
+.about-landing .media-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.65;
+  background-color: black;
+}
+
+.breadcrumb-item a {
+  color: $white;
+}
+.breadcrumb .active {
+  color: #e8ee24 !important;
+  text-shadow: 0 3px 12px $black;
+}
+
+.about-hero {
+  position: relative;
+  height: 200px;
+  display: grid;
+  place-items: center;
+}
+.about-hero-content {
+  z-index: 99;
+  padding: 1rem;
+  position: relative;
+}
+
+.about-hero .media-wrapper {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about-hero .media-wrapper img {
+  object-fit: cover;
+  width: 100%;
+
+  height: 200px;
+}
+.about-hero .media-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.65;
+  background-color: black;
+}
